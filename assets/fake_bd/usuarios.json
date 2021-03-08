@@ -1,0 +1,68 @@
+[
+  {
+    "id_usuario": "1",
+    "usuario": "mfalemany",
+    "clave": "e57553deb3934713a2c2c80ffea4cdc721300553",
+    "nombre_pila": "Federico Alemany"
+  },
+  {
+    "id_usuario": "2",
+    "usuario": "gdure",
+    "clave": "4d9b16f275d072c64ee64fc8afed78df1e79e793",
+    "nombre_pila": "Guillermo Dure"
+  },
+  {
+    "id_usuario": "3",
+    "usuario": "ndelpino",
+    "clave": "32155bd870b93fb72d327b533c71ebf7c3203138",
+    "nombre_pila": "Nelson Delpino"
+  },
+  {
+    "id_usuario": "4",
+    "usuario": "jpomares",
+    "clave": "cfa3393576fb492c1653b428d946a1b37cdd317f",
+    "nombre_pila": "Julio Pomares"
+  },
+  {
+    "id_usuario": "5",
+    "usuario": "gfigueroa",
+    "clave": "ba3042a6644ab7dde96a16b1fd7b19d6d45aad6d",
+    "nombre_pila": "Gabriela Figueroa"
+  },
+  {
+    "id_usuario": "6",
+    "usuario": "cvidal",
+    "clave": "0c34829a68e05b827dd9ca26af5de8800c3c87db",
+    "nombre_pila": "Carlos Vidal"
+  },
+  {
+    "id_usuario": "7",
+    "usuario": "ajaques",
+    "clave": "30fd921d9db8d9efdd76ef9c308ee15d045160c4",
+    "nombre_pila": "Ariel Jaques"
+  },
+  {
+    "id_usuario": "8",
+    "usuario": "aalegre",
+    "clave": "683c1d7fa541f1516fa6d6b6cb56dde6d3c443e0",
+    "nombre_pila": "Amalia Alegre"
+  },
+  {
+    "id_usuario": "9",
+    "usuario": "aulario",
+    "clave": "e57553deb3934713a2c2c80ffea4cdc721300553",
+    "nombre_pila": "Aulario FCA"
+  },
+  {
+    "id_usuario": "9",
+    "usuario": "aulario",
+    "clave": "be81447ff5b4e4277b03d9e68c168a70f9c4edcc",
+    "nombre_pila": "Aulario FCA"
+  },
+  {
+    "id_usuario": "",
+    "usuario": null,
+    "clave": null,
+    "nombre_pila": null
+  }
+]

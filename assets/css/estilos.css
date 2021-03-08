@@ -1,0 +1,1079 @@
+html{
+	overflow-x: hidden;
+}
+/* EVITA EL RECUADRO NEGRO EN CHROME */
+input:focus, select:focus, textarea:focus, option {
+    outline: 1px solid #a8e9ff !important;
+}
+#coronavirus{
+	transition:3s;
+	filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 1)); 
+}
+
+.tachado{
+	text-decoration: line-through;
+}
+.oculto{
+	display:none;
+}
+.turno{
+	display:none;
+}
+.cabecera_acordeon{
+	font-size: 1.2em;
+	color: #f3f3f3;
+	font-weight: bold;
+	background-color: #85b15a;
+	padding: 5px 0px 5px 10px;
+	text-shadow: 1px 1px 1px #222;
+	border: 1px solid #888888;
+	margin: 1px auto 0px auto;
+	width: 98%;
+	cursor: pointer;
+
+}
+
+*{
+	box-sizing: border-box;
+	font-family: 'Droid Sans';
+	font-style: normal;
+	scroll-behavior: smooth;
+}
+body{
+	
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+
+}
+.sub{
+	font-size: 0.8em;
+	font-weight: bold;
+}
+#contenedor{
+	min-height: 400px;
+}
+
+#cabecera{
+	background: #55802b; /* Old browsers 
+	background: -moz-linear-gradient(top, #55802b 0%, #5f9e35 50%, #55802b 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #55802b 0%,#5f9e35 50%,#55802b 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #55802b 0%,#5f9e35 50%,#55802b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55802b', endColorstr='#55802b',GradientType=0 ); /* IE6-9 */
+		/*background-color: #55802B;*/
+		/*background-color: #1B91A8;*/
+	width: 100%;
+	display:flex;
+	flex-wrap: wrap;
+}
+#cabecera img{
+	margin: 0px auto;
+	max-width: 100%;
+}
+#menu *{
+	margin:0px;
+	padding: 0px;
+}
+#menu{
+	background: #151515;
+	background: -moz-linear-gradient(top, #151515 0%, #303030 50%, #151515 100%);
+	background: -webkit-linear-gradient(top, #151515 0%,#303030 50%,#151515 100%);
+	background: linear-gradient(to bottom, #151515 0%,#303030 50%,#151515 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151515', endColorstr='#151515',GradientType=0 );
+	font-family: 'Droid Sans';
+	font-style: normal;
+	font-weight: 400;
+	height: 6vh;
+	min-height: 35px;
+	margin-bottom: 20px;
+}
+
+#menu ul{
+	align-items: stretch;
+	display: flex;
+	flex-wrap: nowrap;
+	height: 100%;
+	width: 100vw;
+}
+#menu ul li{
+	border-right: thin solid #555555;
+	color: #969696;
+	display: inline;
+	flex-grow: 1;
+	height: 100%;
+	list-style: none;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#menu ul li a{
+	align-items: center;
+
+	color: inherit;
+	display: flex;
+	font-size: 0.9em;
+	height: 100%;
+	justify-content: center;
+	text-decoration: none;
+	text-align: center;
+	width: 100%;
+}
+#menu ul li:hover{
+	background-color: #55802B;
+	color: #FFFFFF;
+}
+
+#no_laborables{
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+#no_laborables a{
+	
+}
+
+#filtro{
+	font-size: 0.8em;
+	background-color: #B1D78C;
+	min-height: 30px;
+	min-width: 350px;
+}
+#filtro_criterio{
+	position: relative;
+	float:left;
+	left: 30px;
+	top: 5px;
+	
+}
+#filtro_carrera{
+	position: relative;
+	float:right;
+	top: 3px;
+	right: 10px;
+}
+#filtro select{
+	padding: 3px 10px 3px 10px;
+	border-radius: 3px;
+}
+#filtro_examenes{
+	padding: 2px 0px 2px 0px;
+	width: 10%;
+	font-size: 0.8em;
+	background-color: #DCF9DD;
+}
+#contenedor_filtro_examenes{
+	text-align: right;
+}
+
+
+/* ======================== MENU =============================*/
+
+#cuerpo{
+	
+	background-color: #FFFFFF;
+	margin-bottom: 20px;
+	width: 80%;
+	margin: 0px auto 20px auto;
+}
+
+/* ========================= PANTALLA DE ANUNCIOS ==============================*/
+
+.anuncio{
+	line-height: 1.2em;
+	border: 1px solid #555555;
+	color: #333333;
+	width: 75%;
+	background-color: #FFFFFF;
+	padding: 7px 10px 7px 10px;
+	margin: 15px auto 0px auto;
+	box-shadow: 1px 1px 7px black;
+
+}
+.anuncio_titulo{
+	font-family: sans-serif;
+	font-weight: 600;
+	padding: 3px 0px 3px 15px;
+	background-color: #016864;
+	margin-bottom: 8px;
+	font-size: 0.9em;
+	color:#FFFFFF;
+	text-shadow: 1px 1px 2px #111;
+	
+}	
+.anuncio_titulo.agronomia{
+	background: #55802b;
+	background: -moz-linear-gradient(top, #55802b 0%, #6da036 50%, #55802b 100%);
+	background: -webkit-linear-gradient(top, #55802b 0%,#6da036 50%,#55802b 100%);
+	background: linear-gradient(to bottom, #55802b 0%,#6da036 50%,#55802b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55802b', endColorstr='#55802b',GradientType=0 );
+}
+.anuncio_titulo.industrial{
+	background: #1f86c3;
+	background: -moz-linear-gradient(top, #1f86c3 0%, #22a6d6 50%, #1f86c3 100%);
+	background: -webkit-linear-gradient(top, #1f86c3 0%,#22a6d6 50%,#1f86c3 100%);
+	background: linear-gradient(to bottom, #1f86c3 0%,#22a6d6 50%,#1f86c3 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f86c3', endColorstr='#1f86c3',GradientType=0 );
+}
+.anuncio_titulo.todas{
+	background-color: #797978;
+}
+
+
+
+
+
+.anuncio_contenido{
+	font-size: 0.9em;
+	padding: 0px 30px 0px 30px;
+	margin: 0px 0px 7px 0px;
+	word-break: break-word;
+}
+.anuncio_contenido p{
+	margin: 0px;
+	padding:0px;
+}
+.anuncio_contenido ul, li{
+	margin: 2px;
+	font-size: 0.9em;
+}
+
+.anuncio_pie{
+	text-align: right;
+	color: #BE5216;
+	font-size: 0.7em;
+}
+.autor{
+	text-align: right;
+	font-size: 0.6em;
+	color:#888888;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+/* ---------------------------- ESTILOS Y BOTONES --------------------- */
+.rojo{
+	color: #FF0000;
+	font-size: 0.9em;
+	font-weight: bolder;
+}
+.boton, .enlace-boton{
+	padding: 1px 4px 1px 4px;
+	text-align: center;
+	background-color: #EEEEEE;
+	font-size: 1.1em;
+	border-radius: 4px;
+	-o-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+.boton{
+	border: 1px solid blue;
+	cursor:pointer;
+	color: #2222FF;
+}
+.enlace-boton{
+	border: 1px solid #32832B;;
+	display:inline-block;
+	text-decoration: none;
+	color: #32832B;
+}
+
+
+
+.derecha{
+	text-align: right;
+}
+.center{
+	text-align: center;
+}
+
+/* PANTALLA DE NUEVA PUBLICACION */
+.cerrar_sesion{
+	background-color: #CCCCCC;
+	margin: 0px 0px 20px 0px;
+	padding: 5px 25px 5px 0px;
+	font-size: 0.9em;
+	color:#444444;
+}
+.cerrar_sesion a{
+	text-decoration: none;
+	background-color: #1E8D58;
+	padding: 0px 10px 0px 10px;
+	color:#FFFFFF;
+	border-radius: 4px;
+	
+}
+.cerrar_sesion a:hover{
+	color:#1E8D58;
+	background-color: #FFFFFF;
+}
+.cerrar_sesion b{
+	font-weight: bolder;
+}
+#aclaracion_titulo{
+	color:#EEEEEE;
+	font-size: 0.9em;
+}
+
+#publicar{
+	width: 80%;
+	margin:auto;
+}
+/* ==== PUBLICAR EXAMENES ==== */
+.opciones_importacion{
+	align-content: space-between;
+	align-items: center;
+	border: 1px solid #222;
+	box-shadow: 0px 0px 4px #AAA;
+	display: flex;
+	flex-flow: column nowrap;
+	margin: 10px auto;
+	min-width: 320px;
+	padding: 5px 10px;
+	width: 50%;
+}
+.opciones_importacion .titulo{
+	background-color: #4CB349;
+	color: #FFF;
+	text-align: center;
+	width: 100%;
+}
+.opcion_importacion{
+	display: flex;
+	margin: 5px;
+	width: 100%;
+}
+.opcion_importacion label{
+	display: inline-block;
+	min-width: 137px;
+	padding-right: 10px; 
+	text-align: right;
+	width: 137px;
+	
+}
+
+
+/* =========================== */
+#nueva_publicacion{
+	width:100%;
+}
+
+#tabla_publicacion tr:first-child{
+	background-color:#166F00;
+}
+
+#tabla_publicacion label{
+	font-size: 1.1em;
+	margin-left: 17px;
+	font-weight: bolder;
+}
+#tabla_publicacion select{
+	padding: 4px 6px 4px 6px;
+    border-radius: 3px;
+}
+#tabla_publicacion #titulo{
+	font-size: 1.1em;
+	font-weight: bolder;
+	color:#444444;
+	border: 1px solid #999911;
+	border-radius: 4px;
+	width: 50%;
+	margin: 3px 3px 3px 10px;
+	padding: 2px 2px 2px 5px;
+}
+
+#tabla_publicacion{
+	width: 100%;
+}
+
+.boton_opcion{
+	background-color: #FFFFFF;
+	color:#117711;
+	font-weight: bolder;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid #117711;
+	border-radius: 3px;
+}
+
+.boton_ok{
+	background-color: #166F00;
+	color:white;
+	font-weight: bolder;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid green;
+	border-radius: 3px;
+}
+.boton_fail{
+	background-color: #E04141;
+	color:white;
+	font-weight: bolder;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid red;
+	border-radius: 3px;
+}
+.boton_opcion:hover{
+	cursor: pointer;	
+}
+.boton_ok:hover, .boton_fail:hover{
+	cursor:pointer;
+}
+
+#publicaciones_actuales{
+	background-color: #DDDDDD;
+	border: 2px solid #555555;
+	padding:15px;
+	border-radius: 15px;
+}
+#publicaciones_actuales h1{
+	/*color:white;*/
+	text-align: center;
+}
+
+
+#id_publicacion{
+	display:none;
+}
+
+/* =========== PANTALLA DE LOGIN =============*/
+
+#login{
+	width: 100%;
+}
+
+#login #form_login{
+
+}
+
+#login #form_login table{
+	margin:auto;
+}
+
+#cambio_clave{
+	width: 50%;
+	margin: 50px auto 50px auto;
+}
+#cambio_clave #cambio_clave_tabla{
+	margin: auto;
+}
+#cambio_clave #cambio_clave_tabla tr{
+	line-height: 2em;
+}
+#cambio_clave #cambio_clave_tabla tr:nth-child(1){
+	text-align: center;
+	color:#55802B;
+	line-height: 1.3em;
+	font-weight: bolder;
+}
+#cambio_clave #cambio_clave_tabla tr:nth-child(5){
+	text-align: center;
+}
+
+
+/* ======================== FOOTER =============================*/
+#footer{
+	margin: 15px 0px 0px 0px;
+	padding: 5px 0px 5px 0px;
+	color: #969696;
+	text-align: center;
+	font-family: 'Droid Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.8em;
+	background: rgb(21,21,21); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iIzE1MTUxNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyODI4MjgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(21,21,21,1) 1%, rgba(40,40,40,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(21,21,21,1)), color-stop(100%,rgba(40,40,40,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(21,21,21,1) 1%,rgba(40,40,40,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(21,21,21,1) 1%,rgba(40,40,40,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(21,21,21,1) 1%,rgba(40,40,40,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(21,21,21,1) 1%,rgba(40,40,40,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151515', endColorstr='#282828',GradientType=0 ); /* IE6-8 */
+
+}
+
+#footer a{
+	color: #AAAAAA;
+	text-decoration: none;
+}
+
+/* =================== MENSAJES ================================*/
+
+.mensaje_error{
+	padding: 5px 15px 5px 15px;
+	margin: 15px auto 15px auto;
+	background-color: #EB4747;
+	color:#D6FF00;
+	width: 70%;
+	text-align: center;
+
+}
+.mensaje_ok{
+	padding: 5px 15px 5px 15px;
+	margin: 15px auto 15px auto;
+	background-color: #2E9214;
+	color:#FFFFFF;
+	width: 70%;
+	text-align: center;
+
+}
+
+
+
+
+
+/* ===================INGRESANTES Y TRAMITES==========================*/
+.articulo{
+	width: 80%;
+	margin: 20px auto 20px auto;
+}
+#tramites{
+	margin: 50px auto 20px auto;
+}
+
+.seccion .cuerpo_seccion{
+	margin-left: 30px;
+}
+.seccion .cuerpo_seccion b{
+	font-weight: bolder;
+}
+.seccion{
+	margin-bottom: 50px;
+}
+
+.seccion .titulo_seccion{
+	color:#55802B;
+	line-height: 1.3em;
+	margin-bottom: 15px;
+	font-weight: bolder;
+}
+.seccion .cuerpo_seccion ul li{
+	list-style-type: square;
+	line-height: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.9em;
+	margin-top: 5px;
+}
+.seccion .cuerpo_seccion iframe{
+	width: 100%;
+}
+
+#obtener_salud{
+	text-decoration: none;
+}
+.tabla_cebra *{
+	box-sizing: border-box;
+
+}
+.tabla_cebra{
+	border: 1px solid #CCCCCC;
+	width: 100%;
+	font-size: 0.9em;
+	color:#333333;
+}
+/*para todos las filas impares */
+.tabla_cebra tr:nth-child(odd){
+	background-color: #C3E3FF;	
+}
+/*pero el encabezado distinto */
+.tabla_cebra tr:nth-child(1){
+	background-color: #005A85;
+	color:#FFFFFF;	
+	text-align: center;
+}
+.tabla_cebra tr td{
+	height: 20px;
+	line-height: 1.5em;
+}
+.tabla_cebra tr td a{
+	background-color: #1E8D58;
+	border: 1px solid #1E8D58;
+	border-radius: 4px;
+	color:#FFFFFF;
+	padding: 1px 20px;
+	text-decoration: none;
+	width: 90%;	
+}
+.tabla_cebra tr td a:hover{
+	background-color: #FFFFFF;
+	color: #1E8D58;
+}
+#crono_clases{
+	width: 100%;
+	text-align: center;
+}
+#crono_clases tr:nth-child(2) td{
+	font-weight: bold;
+}
+
+#crono_exam{
+	width: 100%;
+	text-align: center;
+}
+.tabla_ingreso{
+	font-size: 0.8em;
+	width: 95%;
+	margin:auto;
+}
+.tabla_ingreso .cabecera{
+	background-color: #55802B !important;
+	color: #FFFFFF;
+
+}
+.tabla_ingreso .cabecera td{
+	text-align: center;
+	font-weight: bold;
+	padding: 4px 0px 4px 0px;
+}
+.tabla_ingreso tr td{
+	border-bottom: 1px solid grey;
+	text-align: center;
+}
+.tabla_ingreso tr:nth-child(odd){
+	background-color: #EEFFEE;
+}
+
+
+/* ================= EXAMENES =========================*/
+#examenes{
+	width: 80%;
+	margin: 20px auto 20px auto;
+}
+.turno_examenes{
+	font-size: 1.5em;
+	text-align: center;
+	color:#55802B;
+	margin: 20px auto 10px auto;
+}
+.inicio_insc{
+	text-align: center;
+	font-weight: bold;
+	color: #666666;
+}
+.dia_examenes{
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-top: 15px;
+
+}
+.tabla_examenes{
+	border: 1px solid #CCCCCC;
+	width: 100%;
+	font-size: 0.9em;
+	color:#333333;
+
+}
+/*para todos las filas impares */
+.tabla_examenes tr:nth-child(odd){
+	background-color: #C3E3FF;	
+}
+/*pero el encabezado distinto */
+.tabla_examenes tr:nth-child(1){
+	background-color: #005A85;
+	color:#FFFFFF;	
+	text-align: center;
+}
+/*distribucion del ancho de las columnas */
+/* COLUMNA MATERIA */
+.tabla_examenes tr td:nth-child(1){
+	width: 40%;
+}
+/* COLUMNA HORA */
+.tabla_examenes tr td:nth-child(2){
+	width: 10%;
+	text-align: center;
+}
+/* COLUMNA LUGAR */
+.tabla_examenes tr td:nth-child(3){
+	width: 20%;
+	text-align: center;
+}
+/* COLUMNA FECHA DE EXAMEN */
+.tabla_examenes tr td:nth-child(4){
+	width: 10%;
+	text-align: center;
+}
+/* COLUMNA FECHA DE CIERRE */
+.tabla_examenes tr td:nth-child(5){
+	width: 15%;
+	text-align: center;
+}
+/* COLUMNA INSCRIPTOS */
+.tabla_examenes tr td:nth-child(6){
+	width: 5%;
+	text-align: center;
+}
+.tabla_examenes tr td a{
+	text-decoration: none;
+	color:#FF5C00;
+	background-color: #1E8D58;
+	padding: 0px 15px 0px 15px;
+	color:#FFFFFF;
+	border-radius: 4px;
+	font-size: 0.8em;
+}
+
+
+/* ===================== FORMULARIO DE PUBLICACION ======================= */
+#carga_archivos{
+	display: none;
+	z-index:-100;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(100,100,100,0.9);
+}
+#carga_archivos #form_carga_archivos{
+	
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 100px; 
+	width: 60%;
+	box-shadow: 0px 0px 50px black, 0px 0px 50px grey;
+}
+#carga_archivos #form_carga_archivos h2{
+	padding:20px 5px 0px 5px;
+	text-align: center;
+	color:#222222;
+}
+#carga_archivos #form_carga_archivos #campos_archivo{
+	padding:5px 20px 40px 20px;
+	color:#222222;
+}
+#carga_archivos #form_carga_archivos #campos_archivo input[type="text"]{
+	padding:2px 2px 2px 2px;
+	font-weight: bold;
+	display: block;
+	width: 100%;
+}
+#carga_archivos #form_carga_archivos #campos_archivo input[type="button"]{
+	float: right;
+	margin: 0px 3px 0px 3px;
+}
+
+/* muestra un texto en gris y en un tamaño menor al normal */
+.aclaracion	{
+	color: #8e0a00;
+	font-size: 0.9em;
+	font-weight: bold;
+	
+}
+
+.tabla_reglamentos{
+	max-width: 60%; 
+	margin: 0px auto 30px auto;
+}
+#enlace_tabla_reglamentos{
+	width: 100%;
+}
+#enlace_tabla_reglamentos a{
+	background-color: #555;
+	border-radius: 2px;
+	box-shadow: 2px 2px 3px #111;
+	color: #FFF;
+	display: block;
+	font-weight: bold;
+	margin: 20px auto;
+	padding: 7px 0px;
+	text-align: center;
+	text-decoration: none;
+	width: 80%;
+}
+#enlace_tabla_reglamentos a:hover{
+	box-shadow: 2px 2px 6px #111;
+}
+#bolillero *{
+	/*border: 1px solid black;*/
+}
+#bolillero{
+	display: flex;
+	flex-direction: column;
+	height: 80vh;
+	justify-content: flex-start;
+}
+#bolillero h3{
+	font-size: 2.6em;
+	margin: 8px 0px;
+	margin-bottom: 20px;
+	text-align: center;
+	width: 100%;
+}
+#bolillas_limites{
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0px auto;
+	min-width: 400px;
+	padding: 0px;
+	width: 30%;
+}
+#bolillas_limites label{
+	font-size: 1.3em;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	width: 20%;
+}
+#bolillas_limites input{
+	font-size: 1.3em;
+	margin: 7px 0px;
+	text-align: center;
+	width: 80%;
+}
+#sortear{
+	/*background-color: #3a5190;
+    color: #FFF;
+    text-shadow: 0px 0px 4px black;
+    border: outset;*/
+    box-shadow: 0px 0px 3px #222;
+	font-size: 1.4em;
+	margin: 0px auto;
+}
+#sortear:hover{
+	/*background-color: #FFF;
+    color: #0f2663;
+    text-shadow: none;*/
+}
+#bolilla_resultado{
+	align-items: stretch;
+	border: 1px solid #222;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	margin-top: 50px;
+	min-width: 200px;
+	width: fit-content;
+
+	
+}
+#bolilla_resultado #titulo{
+	background-color: #416b21;
+	border: 1px solid #222;
+	color:#FFFFFF;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+
+}
+#bolilla_resultado #bolilla{
+	flex-grow: 1;
+	font-size: 6em;
+	text-align: center;
+}
+
+/* =============== BOTON SCROLL UP ======================================= */
+#scrollUpButton{
+	background-image: url('../imagenes/up-arrow.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #DDD;
+	border: none;
+	border-radius: 50%;
+	bottom: 4vh;
+	box-shadow: 1px 1px 9px #111;
+	color: #FFF;
+	cursor: pointer;
+	font-size: 1.5rem;
+	font-weight: bold;
+	height: 3rem;
+	margin: 0px;
+	outline: 0;
+	padding: 0px;
+	position: fixed;
+	right: calc(5rem + 1vw);
+	transition: .7s ;
+	width: 3rem;
+	z-index: 997;
+}
+
+.hidden{
+	opacity: 0;
+	visibility: hidden;
+}
+
+/* ======================= ESTILOS DEL MODAL (INSCRIPTOS A EXAMEN) =============== */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 3% auto; /* 15% from the top and centered */
+  padding: 0px 20px 20px 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  overflow-y: hidden; /* Enable scroll if needed */
+  max-height: 80vh;
+}
+.modal-info{
+	max-height: 65vh;
+	overflow: auto;
+}
+.modal-footer{
+	font-size: 1.1em;
+    text-align: center;
+    background-color: #005a85;
+    color: #FFF;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal table td:nth-child(1), td:nth-child(3), td:nth-child(4){
+	text-align: center;
+}
+
+/* ====================================================================== */
+
+
+/* ======================================================================= *
+* Smartphones (portrait & landscape) */
+@media only screen and (max-width : 900px){
+	.tabla_reglamentos{
+		max-width: 95%;
+	}
+	/* ============================*/
+	#menu ul li a{
+		font-size: 0.7em;
+	}
+	#cuerpo{
+		width: 100%;
+	}
+	.articulo{
+		width: 100%;
+	}
+	.seccion{
+		width: 95%;
+	}
+	.titulo_seccion{
+		font-size: 1.4rem;
+		padding-left: 20px;
+
+	}
+	#sortear{
+		font-size: 2em;
+		margin-top:30px;
+	}
+}
+
+@media only screen and (min-width : 601px){
+	#menu_mobile{
+		display:none;
+	}
+
+}
+
+/* Smartphones (portrait & landscape) */
+@media only screen and (max-width : 600px){
+	
+	/* ===== Menu Hamburgesa ======*/
+	#boton_burger_container{
+		display:block;
+	}
+
+	#no_laborables{
+		display:none;
+	}
+	#menu{
+		display:none;
+	}
+
+	.tabla_reglamentos{
+		max-width: 100%;
+	}
+	
+	#lbl_filtro_criterio, #lbl_filtro_carrera, #footer{
+		display:none;
+	}
+	.anuncio{
+		border: 1px solid #555555;
+		color: #333333;
+		width: 90%;
+		background-color: #FFFFFF;
+		padding: 5px 3px 3px 3px;
+		font-size: 1.1em;
+	}
+
+	
+	#menu{
+		width: 100%;
+
+	}
+
+	#examenes{
+		width: 95%;
+	}
+	.tabla_examenes tr td:nth-child(5), td:nth-child(6){
+		display: none;
+	}
+	.tabla_examenes th:nth-child(5),th:nth-child(6){
+		display: none;
+	}
+	.tabla_examenes th{
+		font-size: 12px;
+	}
+	.tabla_examenes{
+		width: 100%;
+	}
+	.tabla_examenes tr td{
+		font-size: 9px;
+	}
+	.dia_examenes{
+		font-size: 12px;
+		font-weight: bold;
+	}
+	#turno_examenes{
+		font-size: 15px;
+	}
+	/* ===== TABLA CEBRA ==== */
+	.tabla_cebra{
+		width: 100%;
+	}
+	.tabla_cebra tr td{
+		height: 30px;
+	}
+	.tabla_cebra tr td a{
+		line-height: 1.9em;
+	}
+	#bolillas_limites label{
+		display: none;
+	}
+	#bolillas_limites input{
+		font-size: 3em;
+		margin-left:auto;
+		margin-right:auto;
+		width:40%;
+
+	}
+}

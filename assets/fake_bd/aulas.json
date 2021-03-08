@@ -1,0 +1,121 @@
+[{
+		"id": 1,
+		"nombre": "A confirmar",
+		"activo": 1,
+		"capacidad": 0
+	},
+	{
+		"id": 2,
+		"nombre": "Aula A2",
+		"activo": 1,
+		"capacidad": 0
+	},
+	{
+		"id": 3,
+		"nombre": "Aula A3",
+		"activo": 1,
+		"capacidad": 0
+	},
+	{
+		"id": 4,
+		"nombre": "Aula A4",
+		"activo": 1,
+		"capacidad": 0
+	},
+	{
+		"id": 5,
+		"nombre": "Aula A5",
+		"activo": 1,
+		"capacidad": 0
+	},
+	{
+		"id": 6,
+		"nombre": "Aula D1",
+		"activo": 1,
+		"capacidad": 0
+	},
+	{
+		"id": 7,
+		"nombre": "Aula D2",
+		"activo": 1,
+		"capacidad": 0
+	},
+	{
+		"id": 8,
+		"nombre": "Aulas D1 y D2",
+		"activo": 1,
+		"capacidad": 0
+	},
+	{
+		"id": 9,
+		"nombre": "Aula D3",
+		"activo": 1,
+		"capacidad": 0
+	},
+	{
+		"id": 10,
+		"nombre": "Aula E1",
+		"activo": 1,
+		"capacidad": 0
+	},
+	{
+		"id": 11,
+		"nombre": "Aula E2",
+		"activo": 1,
+		"capacidad": 0
+	},
+	{
+		"id": 12,
+		"nombre": "Campo Experimental",
+		"activo": 1,
+		"capacidad": 0
+	},
+	{
+		"id": 20,
+		"nombre": "CTIAA",
+		"activo": 1,
+		"capacidad": 480
+	},
+	{
+		"id": 13,
+		"nombre": "Departamento",
+		"activo": 1,
+		"capacidad": 0
+	},
+	{
+		"id": 18,
+		"nombre": "Doctoral",
+		"activo": 1,
+		"capacidad": 0
+	},
+	{
+		"id": 14,
+		"nombre": "Laboratorio",
+		"activo": 1,
+		"capacidad": 0
+	},
+	{
+		"id": 17,
+		"nombre": "Posgrado",
+		"activo": 1,
+		"capacidad": 0
+	},
+	{
+		"id": 15,
+		"nombre": "Sala de Proyecciones",
+		"activo": 1,
+		"capacidad": 0
+	},
+	{
+		"id": 16,
+		"nombre": "Sala de Informática",
+		"activo": 1,
+		"capacidad": 0
+	},
+	{
+		"id": 19,
+		"nombre": "Sin Inscriptos",
+		"activo": 1,
+		"capacidad": 0
+	}
+]

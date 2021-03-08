@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aleatoriedad</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		.contenido{
+			display: flex;
+		}
+		.barra{
+			background-color: #416b21;
+			margin-bottom: 10px;
+			color: #FFFFFF;
+			padding: 4px;
+
+		} 
+	</style>
+</head>
+<body>
+	<h2 style="text-align: center;">Simulación de 10.000 sorteos entre los números 1 y 10</h2>
+	<h3 style="text-align: center;">con el mismo método utilizado para el sorteo de bolillas</h3>
+	<br>
+	<div id="contenido">
+		
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	simularSorteo();
+	setInterval(simularSorteo,1000);
+	
+	function simularSorteo(){
+		document.getElementById('contenido').innerHTML = '';
+		var widths = new Array(10).fill(0);
+		for (let i = 1; i <= 10000; i++) {
+			sorteado = Math.floor(Math.random()*10);
+			widths[sorteado]++;
+		}
+		
+		fragmento = new DocumentFragment();
+		widths.forEach(function(elem, index){
+			div = document.createElement('div');
+			div.classList.add('barra');
+			div.textContent = `Número ${index+1}: ${elem} veces`;
+			div.style.width = `${elem/100*9}vw`;
+			fragmento.appendChild(div);
+		});
+		document.getElementById('contenido').appendChild(fragmento);	
+	}
+</script>

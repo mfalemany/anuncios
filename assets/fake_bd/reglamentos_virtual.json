@@ -1,0 +1,316 @@
+{
+  "carreras": {
+    "Ingeniería Agronómica": {
+      "id_carrera": "agr",
+      "anios": {
+        "Primer Año": [
+          {
+            "materia": "Matemática I",
+            "archivo": "matematica_1"
+          },
+          {
+            "materia": "Química General e Inorgánica",
+            "archivo": "quimica_general_inorganica_agr"
+          },
+          {
+            "materia": "Morfología de Plantas Vasculares",
+            "archivo": "morfologia"
+          },
+          {
+            "materia": "Matemática II",
+            "archivo": "matematica_2"
+          },
+          {
+            "materia": "Física I",
+            "archivo": "fisica_1"
+          },
+          {
+            "materia": "Agroclimatología",
+            "archivo": "agroclimatologia"
+          },
+          {
+            "materia": "Ecología",
+            "archivo": "ecologia"
+          }
+        ],
+        "Segundo Año": [
+          {
+            "materia": "Física II",
+            "archivo": "fisica_2"
+          },
+          {
+            "materia": "Química Orgánica y Biológica",
+            "archivo": "quimica_organica_biologica"
+          },
+          {
+            "materia": "Cálculo Estadístico y Biometría",
+            "archivo": "calculo_estadistico_biometria"
+          },
+          {
+            "materia": "Genética",
+            "archivo": "genetica"
+          },
+          {
+            "materia": "Fisiología Vegetal",
+            "archivo": "fisiologia_vegetal"
+          },
+          {
+            "materia": "Edafología",
+            "archivo": "edafologia"
+          },
+          {
+            "materia": "Botánica Sistemática y Fitogeografía",
+            "archivo": "botanica_sistematica_fitogeografia"
+          }
+        ],
+        "Tercero Año": [
+          {
+            "materia": "Microbiología Agrícola",
+            "archivo": "microbiologia_agricola"
+          },
+          {
+            "materia": "Zoología Agrícola",
+            "archivo": "zoologia_agricola"
+          },
+          {
+            "materia": "Fitopatología",
+            "archivo": "fitopatologia"
+          },
+          {
+            "materia": "Economía Política",
+            "archivo": "economia_politica_agr"
+          },
+          {
+            "materia": "Mecanización Agrícola",
+            "archivo": "mecanizacion_agricola"
+          },
+          {
+            "materia": "Nutrición Animal",
+            "archivo": "nutricion_animal"
+          },
+          {
+            "materia": "Química Analítica y Agrícola",
+            "archivo": "quimica_analitica"
+          },
+          {
+            "materia": "Hidrología Agrícola",
+            "archivo": "hidrologia_agricola"
+          }
+        ],
+        "Cuarto Año": [
+          {
+            "materia": "Terapeutica Vegetal",
+            "archivo": "terapeutica_vegetal"
+          },
+          {
+            "materia": "Economía Agraria",
+            "archivo": "economia_agraria"
+          },
+          {
+            "materia": "Forrajicultura",
+            "archivo": "forrajicultura"
+          },
+          {
+            "materia": "Manejo y Conservación de Suelos",
+            "archivo": "manejo_conservacion_suelos"
+          },
+          {
+            "materia": "Silvicultura",
+            "archivo": "silvicultura"
+          },
+          {
+            "materia": "Zootécnia",
+            "archivo": "zootecnia"
+          },
+          {
+            "materia": "Fruticultura",
+            "archivo": "fruticultura"
+          },
+          {
+            "materia": "Cultivos I",
+            "archivo": "cultivos_1"
+          },
+          {
+            "materia": "Sociología y Extensión Rural",
+            "archivo": "sociologia_extension_rural"
+          },
+          {
+            "materia": "Cultivos II",
+            "archivo": "cultivos_2"
+          }
+        ],
+        "Quinto Año": [
+          {
+            "materia": "Cultivos III",
+            "archivo": "cultivos_3"
+          },
+          {
+            "materia": "Horticultura",
+            "archivo": "horticultura"
+          },
+          {
+            "materia": "Administración y Legislación Agraria",
+            "archivo": "administracion_legislacion_agraria"
+          }
+        ]
+      }
+    },
+    "Ingeniería Industrial": {
+      "id_carrera": "ind",
+      "anios": {
+        "Primer Año": [
+          {
+            "materia": "Matemática A",
+            "archivo": "matematica_a"
+          },
+          {
+            "materia": "Química General e Inorgánica",
+            "archivo": "quimica_general_inorganica_ind"
+          },
+          {
+            "materia": "Matemática B (Análisis I)",
+            "archivo": "matematica_b"
+          },
+          {
+            "materia": "Inglés I",
+            "archivo": "ingles_1"
+          },
+          {
+            "materia": "Informática y Programación",
+            "archivo": "informatica_programacion"
+          },
+          {
+            "materia": "Matemática C (Análisis II)",
+            "archivo": "matematica_c"
+          },
+          {
+            "materia": "Sistemas de Representación",
+            "archivo": "sistemas_representacion"
+          },
+          {
+            "materia": "Física",
+            "archivo": "fisica"
+          }
+        ],
+        "Segundo Año": [
+          {
+            "materia": "Matemática D",
+            "archivo": "matematica_d"
+          },
+          {
+            "materia": "Química Industrial",
+            "archivo": "quimica_industrial"
+          },
+          {
+            "materia": "Probabilidad y Estadística",
+            "archivo": "probabilidad_estadistica"
+          },
+          {
+            "materia": "Termodinámica y Máquinas Térmicas",
+            "archivo": "termodinamica_maquinas_termicas"
+          },
+          {
+            "materia": "Inglés II",
+            "archivo": "ingles_2"
+          },
+          {
+            "materia": "Electricidad y Magnetismo",
+            "archivo": "electricidad_magnetismo"
+          },
+          {
+            "materia": "Mecánica de los Fluidos",
+            "archivo": "mecanica_fluidos"
+          },
+          {
+            "materia": "Microbiología Industrial",
+            "archivo": "microbiologia_industrial"
+          },
+          {
+            "materia": "Administración de Empresas Industriales",
+            "archivo": "administracion_empresas_industriales"
+          },
+          {
+            "materia": "Mecánica y Mecanismos",
+            "archivo": "mecanica_mecanismos"
+          }
+        ],
+        "Tercer Año": [
+          {
+            "materia": "Estática y Resistencia de Materiales",
+            "archivo": "estatica_resistencia_materiales"
+          },
+          {
+            "materia": "Organización de la Producción",
+            "archivo": "organizacion_produccion"
+          },
+          {
+            "materia": "Máquinas Industriales",
+            "archivo": "maquinas_industriales"
+          },
+          {
+            "materia": "Investigación Operativa",
+            "archivo": "investigacion_operativa"
+          },
+          {
+            "materia": "Inglés III",
+            "archivo": "ingles_3"
+          },
+          {
+            "materia": "Economía Política",
+            "archivo": "ecnonomia_politica_ind"
+          },
+          {
+            "materia": "Procesos Industriales",
+            "archivo": "procesos_industriales"
+          },
+          {
+            "materia": "Ciencia de los Materiales",
+            "archivo": "ciencia_materiales"
+          },
+          {
+            "materia": "Electrotécnia y Máquinas Eléctricas",
+            "archivo": "electrotecnia_maquinas_electricas"
+          }
+        ],
+        "Cuarto Año": [
+          {
+            "materia": "Construcciones y Montajes Industriales",
+            "archivo": "construcciones_montajes_industriales"
+          },
+          {
+            "materia": "Ingeniería Ambiental",
+            "archivo": "ingenieria_ambiental"
+          },
+          {
+            "materia": "Ingeniería Legal",
+            "archivo": "ingenieria_legal "
+          },
+          {
+            "materia": "Industria de la Madera",
+            "archivo": "industria_madera"
+          },
+          {
+            "materia": "Industria Pecuaria",
+            "archivo": "industria_pecuaria"
+          },
+          {
+            "materia": "Industria de Vegetales I",
+            "archivo": "industria_vegetales_1"
+          },
+          {
+            "materia": "Inglés IV",
+            "archivo": "ingles_4"
+          },
+          {
+            "materia": "Industria de Vegetales II",
+            "archivo": "industria_vegetales_2"
+          },
+          {
+            "materia": "Industria de Vegetales III",
+            "archivo": "industria_vegetales_3"
+          }
+        ]
+      }
+    }
+  }
+}
