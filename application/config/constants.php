@@ -44,7 +44,7 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 | 
 |
 */
-define('URL_BASE_GUARANI_REST','http://10.30.1.13:83/rest');
+define('URL_BASE_GUARANI_REST','http://Agrarias_guarani_rest/rest');
 define('USUARIO_GUARANI_REST','cliente');
 define('CLAVE_GUARANI_REST','ClienteGuarani');
 

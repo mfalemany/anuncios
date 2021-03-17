@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded',function(){
 			    formData.append("userfile", $("#userfile").prop("files")[0] );
 
 				$.ajax({
-					url:'/anuncios/publicar/subir_archivo', //metodo que controla la subida
+					url:'/publicar/subir_archivo', //metodo que controla la subida
 					type:'POST', //Metodo que usaremos
 					contentType:false, //Debe estar en false para que pase el objeto sin procesar
 					data:formData, //Le pasamos el objeto que creamos con los archivos
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded',function(){
 					respuesta = JSON.parse(msg);
 					console.log(respuesta);
 					//generamos el link y lo agregamos al editor
-					CKEDITOR.instances.editor1.insertHtml('<a target="_BLANK" data-cke-saved-href="/anuncios/assets/pdfs/temp/'+respuesta.resultado.file_name+'" href="/anuncios/assets/pdfs/temp/'+respuesta.resultado.file_name+'">'+$("#texto_enlace").prop("value")+'</a>','unfiltered_html');
+					CKEDITOR.instances.editor1.insertHtml('<a target="_BLANK" data-cke-saved-href="/assets/pdfs/temp/'+respuesta.resultado.file_name+'" href="/assets/pdfs/temp/'+respuesta.resultado.file_name+'">'+$("#texto_enlace").prop("value")+'</a>','unfiltered_html');
 					CKEDITOR.instances.editor1.updateElement();
 
 					//se resetea el campo "Texto del enlace"
