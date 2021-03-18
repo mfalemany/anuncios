@@ -234,9 +234,11 @@ body{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f86c3', endColorstr='#1f86c3',GradientType=0 );*/
 }
 .anuncio_titulo.todas{
-	background-color: #dedede;
+	background-color: #C1C1C1;
 	color:#222;
+	font-weight: bold;
 	text-shadow: none;
+	
 }
 
 
