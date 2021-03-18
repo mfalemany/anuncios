@@ -17,7 +17,8 @@
 	<!-- Botón Hamburguesa -->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/boton_burger.css?a=<?php echo time(); ?>" media="all"> 
 	<!-- fuente de google -->
-	<link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 	<!-- metadatos -->
 	<meta property="og:url" content="http://www.agr.unne.edu.ar/anuncios/" />
 	<meta property="og:type" content="website"/>
@@ -34,6 +35,7 @@
 </head>
 <body>
 	<div id="contenedor">
+		<div id="linea_verde"></div>
 		<div id="cabecera">
-			<img src="<?php echo base_url(); ?>assets/imagenes/encabezado_t.png" alt="Anuncios - FCA">
+			<img src="<?php echo base_url(); ?>assets/imagenes/header_nuevo.png" alt="Anuncios - FCA">
 		</div>

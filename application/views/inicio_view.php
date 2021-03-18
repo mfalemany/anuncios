@@ -23,9 +23,9 @@
 		background-color: #4f612a;
 	}
 </style>
-<div id="no_laborables" style="background-color:#76905c; margin: -18px auto 3px 0px; text-align: center;">
-	<a href="http://www.agr.unne.edu.ar/images/documentos/Res-778.17.pdf" target="_BLANK" class='enlace'>CRONOGRAMA DE DÍAS NO LABORABLES</a>
-	<a href="<?php echo base_url(); ?>/assets/pdfs/perm/resol_316_19.pdf" target="_BLANK" class='enlace'>RÉGIMEN DE REGULARIDAD DE ESTUDIANTES</a>
+<div id="no_laborables">
+	<a href="http://www.agr.unne.edu.ar/images/documentos/Res-778.17.pdf" target="_BLANK">CRONOGRAMA DE DÍAS NO LABORABLES</a>
+	<a href="<?php echo base_url(); ?>/assets/pdfs/perm/resol_316_19.pdf" target="_BLANK">RÉGIMEN DE REGULARIDAD DE ESTUDIANTES</a>
 </div>
 <!-- =========================== FILTROS ========================================-->
 <div id="filtro">

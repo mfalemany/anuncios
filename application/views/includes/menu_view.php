@@ -8,7 +8,7 @@
 		<li><a href="<?php echo base_url(); ?>ingresantes">CURSO INTRODUCTORIO</a></li>
 		<li><a href="<?php echo base_url() ?>tramites">TRAMITES</a></li>
 		<li><a href="http://aulas.agr.unne.edu.ar" target="_BLANK">AULARIO</a></li>
-		<li><a style="color:#F0E72C;" href="<?php echo base_url() ?>inicio/reglamentos">REGLAMENTOS <br> MOD. VIRTUAL</a></li>
+		<li><a href="<?php echo base_url() ?>inicio/reglamentos">REGLAMENTOS <br> MOD. VIRTUAL</a></li>
 	</ul>
 </div>
 <div id='boton_burger_container'>
