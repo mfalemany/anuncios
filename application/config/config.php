@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://192.168.0.52/anuncios/';
+$config['base_url']	= 'http://anuncios.agr.unne.edu.ar/';
 
 /*
 |--------------------------------------------------------------------------
