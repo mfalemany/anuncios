@@ -3,11 +3,12 @@
 	<ul>
 		<li><a href="http://www.agr.unne.edu.ar/">INICIO</a></li>
 		<li><a href="<?php echo base_url(); ?>inicio">ANUNCIOS</a></li>
-		<li><a href="http://guarani.agr.unne.edu.ar/" target="_BLANK">SIU - GUARANI</a></li>
 		<li><a href="<?php echo base_url() ?>examenes">EXAMENES</a></li>
-		<li><a href="<?php echo base_url(); ?>ingresantes">CURSO INTRODUCTORIO</a></li>
-		<li><a href="<?php echo base_url() ?>tramites">TRAMITES</a></li>
+		<li><a href="http://guarani.agr.unne.edu.ar/" target="_BLANK">SIU - GUARANI</a></li>
 		<li><a href="http://aulas.agr.unne.edu.ar" target="_BLANK">AULARIO</a></li>
+		<li><a href="<?php echo base_url(); ?>normativas">NORMATIVAS</a></li>
+		<li><a href="<?php echo base_url() ?>tramites">TRAMITES</a></li>
+		<li><a href="<?php echo base_url(); ?>ingresantes">CURSO INTRODUCTORIO</a></li>
 		<li><a href="<?php echo base_url() ?>inicio/reglamentos">REGLAMENTOS <br> MOD. VIRTUAL</a></li>
 	</ul>
 </div>
