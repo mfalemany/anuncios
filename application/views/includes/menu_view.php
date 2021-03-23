@@ -12,6 +12,8 @@
 		<li><a href="<?php echo base_url() ?>inicio/reglamentos">REGLAMENTOS <br> MOD. VIRTUAL</a></li>
 	</ul>
 </div>
+<div id="separador_menu"></div>
+
 <div id='boton_burger_container'>
 	<div id="boton_burger">
 		<div class="barra" id="barra1"></div>

@@ -23,10 +23,6 @@
 		background-color: #4f612a;
 	}
 </style>
-<div id="no_laborables">
-	<a href="http://www.agr.unne.edu.ar/images/documentos/Res-778.17.pdf" target="_BLANK">CRONOGRAMA DE DÍAS NO LABORABLES</a>
-	<a href="<?php echo base_url(); ?>/assets/pdfs/perm/resol_316_19.pdf" target="_BLANK">RÉGIMEN DE REGULARIDAD DE ESTUDIANTES</a>
-</div>
 <!-- =========================== FILTROS ========================================-->
 <div id="filtro">
 	<div id="filtro_criterio">

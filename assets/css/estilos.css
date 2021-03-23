@@ -130,8 +130,8 @@ body{
 	
 }
 
-#no_laborables{
-	border :1px solid #CCC;
+#separador_menu{
+	border :1px solid #009b4f;
 	border-left: none;
 	border-right: none;
 	display:flex;
@@ -139,20 +139,7 @@ body{
 	font-size: 10px;
 	justify-content: center;
 	text-align: center;
-
 }
-#no_laborables a{
-	color:#777;
-	text-decoration: none;
-	min-width: 20%;
-	padding: 3px;
-	transition: all .2s ease-out;
-}
-#no_laborables a:hover{
-	color: #3d3d3d;
-	background-color:#EEEEEE;
-}
-
 #filtro{
 	font-size: 0.8em;
 	
