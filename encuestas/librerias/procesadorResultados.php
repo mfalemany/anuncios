@@ -9,7 +9,6 @@
 		private $nombre_elemento; //Contiene un nombre de catedra o de docente
 		private $tipo_elemento; //Contiene si es una catedra o un docente
 		private $archivos_resultados;
-		private $anio_encuesta;
 		public $numero_encuestados;
 		public $anio_encuesta;
 		
@@ -158,12 +157,8 @@
 						if( ! $this->get_nombre_elemento() ){
 							//obtengo el nombre del docente/catedra
 							$this->set_nombre_elemento($campos[2]);
-<<<<<<< HEAD
-							$tipo = (strpos(strtolower($campos[0]),'tedra')  !== false) ? 'C' : 'D';
-							$this->set_tipo_elemento($tipo);
-=======
+
 							$this->set_tipo_elemento($campos[0]);
->>>>>>> c714021305dfc47e4ffbc903cc4764a9c40ece04
 						}
 						$linea++;
 					}
@@ -193,44 +188,17 @@
 							//si ya está definida, solo sumo uno
 							$this->preguntas[$pregunta][$opcion]++;
 						}
-
 					}
-					
 				}else{
 					$linea++;
 				}	
-				
 			}
 			return true;
 		}
 
 		//funcion que comprueba los archivos subidos y los mueve a la carpeta de temporales para trabajarlos
 		private function verificar_archivos(){
-<<<<<<< HEAD
-			/*foreach ($_FILES as $indice => $valor){
-				echo "<h1> $indice </h1>";
-				var_dump($valor);
-				echo "<hr>";
-			}
 
-			die;*/
-			//recorro todos los archivos recibidos
-			foreach ($_FILES as $nombre => $detalles) {
-				//echo count($detalles['name']); die;
-				for($i = 0; $i < count($detalles['name']); $i++ ){
-					//intento mover el archivo subido a la carpeta de temporales
-					if( move_uploaded_file($detalles['tmp_name'][$i], "../temporales/".$nombre.$i.".txt" )){
-						//verifico si es un archivo de resultados docente o cátedra
-						if( preg_match("/file_doc_(.)*/i", $nombre) ){
-							//creo un array con cada conjunto de archivos
-							$this->archivos_resultados['docente'][] = "../temporales/".$nombre.$i.".txt";
-						}else{
-							$this->archivos_resultados['catedra'][] = "../temporales/".$nombre.$i.".txt";
-						}
-					}else{
-						//configurar que hacer con los archivos que fallaron al mover
-					}
-=======
 			
 			$archivos = array();
 			for($i = 0; $i < count($_FILES['resultados']['name']); $i++){
@@ -256,7 +224,6 @@
 					//}
 				}else{
 					//configurar que hacer con los archivos que fallaron al mover
->>>>>>> c714021305dfc47e4ffbc903cc4764a9c40ece04
 				}
 			}
 			//var_dump($this->archivos_resultados); die;

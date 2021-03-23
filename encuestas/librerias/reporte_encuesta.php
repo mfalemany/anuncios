@@ -50,11 +50,8 @@
 			//imprimo el año actual
 			$this->set_fuente("Arial",15,array(0,0,0),array(0,0,0),'BU',array(0,0,0));
 			$this->setXY(86,33);
-<<<<<<< HEAD
-			$this->Cell(30,5,$datos->get_anio_encuesta(),0,1,'C',false);
-=======
+
 			$this->Cell(30,5,$datos->anio_encuesta,0,1,'C',false);
->>>>>>> c714021305dfc47e4ffbc903cc4764a9c40ece04
 
 			//se muestra el total de respuestas registradas
 			$this->setXY(170,66);
