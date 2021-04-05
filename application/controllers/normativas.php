@@ -19,8 +19,10 @@ class Normativas extends CI_Controller {
 	}
 
 	function eliminar($nombre_archivo){
-		$this->normativas_model->eliminar_archivo($nombre_archivo);
-		redirect('/normativas');
+		if($this->session->userdata('logged_in')){
+			$this->normativas_model->eliminar_archivo($nombre_archivo);
+			redirect('/normativas');
+		}
 	}
 }
 
