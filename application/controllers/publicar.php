@@ -39,9 +39,12 @@ class Publicar extends CI_Controller {
 	}
 
 	public function normativas(){
+		$datos['notif'] = $this->session->userdata('notif') ? $this->session->userdata('notif') : NULL;
+		$datos['post'] = $this->session->userdata('post') ? $this->session->userdata('post') : NULL;
 		$this->load->view("includes/cabecera_view", array('titulo'=>"Normativas"));
 		$this->load->view("includes/botonera_view");
-		$this->load->view("publicar/publicar_normativas_view");
+		$this->load->view("publicar/publicar_normativas_view",$datos);
+		
 	}
 
 	public function guardar_turno(){
@@ -55,13 +58,16 @@ class Publicar extends CI_Controller {
 		if($this->input->post()){
 			$datos = $this->normativas_model->guardar_normativa($this->input->post());
 			if($datos['error']){
-				$datos['notificacion'] = $datos['error'];
-				$datos['post'] = $this->input->post();
+				$this->session->set_userdata(
+					array('notif' => 'Ocurri&oacute; un error. Solo se permiten archivos PDF' ,
+						  'post'  => $this->input->post()
+					)
+				);
+				redirect('publicar/normativas');
 			}else{
-				$datos['notificacion'] = "Guardado con &eacute;xito!";
-				$this->load->view("includes/cabecera_view", array('titulo'=>"Normativas"));
-				$this->load->view("includes/botonera_view");
-				$this->load->view("publicar/publicar_normativas_view",$datos);
+				$this->session->unset_userdata('post');
+				$this->session->set_userdata(array('notif'=>'Guardado con &eacute;xito!'));
+				redirect('publicar/normativas');
 			}
 		}
 		

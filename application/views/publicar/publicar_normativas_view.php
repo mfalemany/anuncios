@@ -1,11 +1,10 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
-
-<?php if(isset($notificacion)) : ?>
+<?php if(isset($notif)) : ?>
 <div id="notificacion">
-	<?php echo $notificacion;  ?>
+	<?php echo $notif; ?>
 </div>
 <?php endif; ?>
-
+<?php $post = isset($post) ? $post : array('categoria'=>null); ?>
 <div id="publicar_normativas">
 	<div id="publicar">
 		<form enctype="multipart/form-data" method="POST" action="<?php echo base_url(); ?>publicar/guardar_normativa">
@@ -42,6 +41,7 @@
 		
 	</div>
 </div>
+<?php unset($_SESSION); ?>
 <script type="text/javascript">
 	$notif = document.getElementById('notificacion');
 	if($notif){

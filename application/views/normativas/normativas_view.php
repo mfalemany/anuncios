@@ -6,6 +6,7 @@
 		</div>
 		<div class="cuerpo_seccion">
 			<ul>
+			<?php if(isset($normativas['G'])) : ?>
 				<?php foreach($normativas['G'] as $normativa) : ?>
 				<li>
 					<a href="<?php echo base_url(); ?>assets/pdfs/perm/<?php echo $normativa['archivo']; ?>.pdf" 
@@ -17,6 +18,7 @@
 
 					</li>
 				<?php endforeach; ?>		
+			<?php endif; ?>
 			</ul>
 		</div>
 	</section>
@@ -26,6 +28,7 @@
 		</div>
 		<div class="cuerpo_seccion">
 			<ul>
+				<?php if(isset($normativas['P'])) : ?>
 				<?php foreach($normativas['P'] as $normativa) : ?>
 				<li><a href="<?php echo base_url(); ?>assets/pdfs/perm/<?php echo $normativa['archivo']; ?>.pdf" 
 						target="_blank"><?php echo $normativa['nombre']; ?></a> - <?php echo $normativa['descripcion']; ?>  
@@ -36,6 +39,7 @@
 					<?php endif; ?>
 					</li>
 				<?php endforeach; ?>
+				<?php endif; ?>
 			</ul>
 		</div>
 	</section>
