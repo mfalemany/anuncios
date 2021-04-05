@@ -15,6 +15,7 @@ class Normativas extends CI_Controller {
 		$this->load->view("includes/cabecera_view", array('titulo'=>"Normativas"));
 		$this->load->view("includes/menu_view");
 		$this->load->view("normativas/normativas_view",array('normativas'=>$normativas) );
+		$this->load->view('includes/footer_view');
 	}
 
 	function eliminar($nombre_archivo){

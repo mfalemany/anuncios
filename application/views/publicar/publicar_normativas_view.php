@@ -1,8 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
 <?php if(isset($notificacion)) : ?>
-<div style="background-color: #fff68c; color: #000; text-align: center; text-shadow: 0px 0px 2px #fff;">
-	<?php echo $notificacion; ?>
+<div id="notificacion">
+	<?php echo $notificacion;  ?>
 </div>
 <?php endif; ?>
 
@@ -42,3 +42,11 @@
 		
 	</div>
 </div>
+<script type="text/javascript">
+	$notif = document.getElementById('notificacion');
+	if($notif){
+		setTimeout(()=>{
+			$notif.style.opacity = 0;
+		},3000);
+	}
+</script>

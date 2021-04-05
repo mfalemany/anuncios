@@ -872,7 +872,9 @@ body{
 	font-size: 6em;
 	text-align: center;
 }
-
+#normativas{
+	min-height: 300px;
+}
 #publicar_normativas{
 	
 	margin: 10px auto;
@@ -885,6 +887,13 @@ body{
 }
 #publicar_normativas #publicar form{
 	width: 100%;
+}
+#notificacion{
+	background-color: #fff68c; 
+	color: #000; 
+	text-align: center; 
+	text-shadow: 0px 0px 2px #fff;
+	transition: opacity 1s ease-out;
 }
 
 .linea_formulario{
