@@ -7,12 +7,19 @@ class Normativas extends CI_Controller {
 
 	function __construct(){
 		parent::__construct();
+		$this->load->model('normativas_model');
 	}
 	
 	public function index(){
-		$this->load->view("includes/cabecera_view", array('titulo'=>"Anuncios FCA"));
+		$normativas = $this->normativas_model->obtener_todas();
+		$this->load->view("includes/cabecera_view", array('titulo'=>"Normativas"));
 		$this->load->view("includes/menu_view");
-		$this->load->view("normativas/normativas_view");
+		$this->load->view("normativas/normativas_view",array('normativas'=>$normativas) );
+	}
+
+	function eliminar($nombre_archivo){
+		$this->normativas_model->eliminar_archivo($nombre_archivo);
+		redirect('/normativas');
 	}
 }
 

@@ -8,6 +8,7 @@ class Publicar extends CI_Controller {
 			$this->load->model("usuarios_model");
 			$this->load->model("anuncios_model");
 			$this->load->model("examenes_model");
+			$this->load->model("normativas_model");
 			$this->load->helper("funciones");	
 		}else{
 			redirect('login');	
@@ -24,6 +25,7 @@ class Publicar extends CI_Controller {
 
 		$data = array('anuncios'=>json_encode($anuncios),"usuarios"=>$usuarios);
 		$this->load->view("includes/cabecera_view", array('titulo'=>"Publicar"));
+		$this->load->view("includes/botonera_view");
 		$this->load->view("publicar/publicar_view",$data);
 		
 	
@@ -32,7 +34,14 @@ class Publicar extends CI_Controller {
 	public function examenes(){
 		$data = array('examenes'=>$this->examenes_model->get_examenes(),'aulas'=>$this->examenes_model->get_aulas());
 		$this->load->view("includes/cabecera_view", array('titulo'=>"Examenes"));
+		$this->load->view("includes/botonera_view");
 		$this->load->view("publicar/publicar_examenes_view",$data);
+	}
+
+	public function normativas(){
+		$this->load->view("includes/cabecera_view", array('titulo'=>"Normativas"));
+		$this->load->view("includes/botonera_view");
+		$this->load->view("publicar/publicar_normativas_view");
 	}
 
 	public function guardar_turno(){
@@ -40,6 +49,21 @@ class Publicar extends CI_Controller {
 			$this->examenes_model->guardar_turno($this->input->post());
 		}
 		redirect("publicar/examenes");
+	}
+
+	function guardar_normativa(){
+		if($this->input->post()){
+			$datos = $this->normativas_model->guardar_normativa($this->input->post());
+			if($datos['error']){
+				$datos['notificacion'] = $datos['error'];
+				$datos['post'] = $this->input->post();
+			}else{
+				$datos['notificacion'] = "Guardado con &eacute;xito!";
+				$this->load->view("includes/cabecera_view", array('titulo'=>"Normativas"));
+				$this->load->view("includes/botonera_view");
+				$this->load->view("publicar/publicar_normativas_view",$datos);
+			}
+		}
 		
 	}
 

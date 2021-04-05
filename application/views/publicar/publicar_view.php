@@ -1,8 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-<div class="cerrar_sesion derecha">
-	Bienvenido&nbsp;&nbsp;<b><?php echo $this->session->userdata('nombre_pila'); ?></b>.&nbsp;&nbsp;<a href="<?php echo base_url(); ?>publicar/examenes">Examenes</a>&nbsp;&nbsp;<a href="<?php echo base_url(); ?>login/cambio_clave">Cambiar mi clave</a>&nbsp;&nbsp;<a href="<?php echo base_url(); ?>login/cerrar_sesion">Cerrar Sesión</a>
-</div>
+
 <div id="publicar">
 	<div id="nueva_publicacion">
 		<?php echo form_open_multipart('publicar/guardar'); ?>

@@ -6,7 +6,17 @@
 		</div>
 		<div class="cuerpo_seccion">
 			<ul>
-				<li><a href="<?php echo base_url(); ?>assets/pdfs/perm/resol_316_19.pdf" target="_blank">Resol. 316/19 C.S.</a> - Régimen de regularidad de estudiantes</li>
+				<?php foreach($normativas['G'] as $normativa) : ?>
+				<li>
+					<a href="<?php echo base_url(); ?>assets/pdfs/perm/<?php echo $normativa['archivo']; ?>.pdf" 
+						target="_blank"><?php echo $normativa['nombre']; ?></a> - <?php echo $normativa['descripcion']; ?>
+						<?php if($this->session->userdata('logged_in')): ?>
+						-
+						<a class="confirmacion" href="<?php echo base_url(); ?>normativas/eliminar/<?php echo $normativa['archivo']; ?>">Eliminar</a>
+					<?php endif; ?>
+
+					</li>
+				<?php endforeach; ?>		
 			</ul>
 		</div>
 	</section>
@@ -16,9 +26,25 @@
 		</div>
 		<div class="cuerpo_seccion">
 			<ul>
-				<li><a href="<?php echo base_url(); ?>assets/pdfs/perm/resol_0051_2021.pdf" target="_blank">Resol. 0051/21 C.S.</a> - Extensión de regularidades que vencen al 31/03/2021</li>
-				<li><a href="<?php echo base_url(); ?>assets/pdfs/perm/resol_0036_2021.pdf" target="_blank">Resol. 0036/21 C.S.</a> - Cursado condicional de materias del primer trimestre/cuatrimestre</li>
+				<?php foreach($normativas['P'] as $normativa) : ?>
+				<li><a href="<?php echo base_url(); ?>assets/pdfs/perm/<?php echo $normativa['archivo']; ?>.pdf" 
+						target="_blank"><?php echo $normativa['nombre']; ?></a> - <?php echo $normativa['descripcion']; ?>  
+
+					<?php if($this->session->userdata('logged_in')): ?>
+						-
+						<a class="confirmacion" href="<?php echo base_url(); ?>normativas/eliminar/<?php echo $normativa['archivo']; ?>">Eliminar</a>
+					<?php endif; ?>
+					</li>
+				<?php endforeach; ?>
 			</ul>
 		</div>
 	</section>
 </div>
+<script type="text/javascript">
+	 let enlaces = document.querySelectorAll('.confirmacion');
+	 enlaces.forEach((elemento) => {
+	 	elemento.addEventListener('click',(evento)=>{
+	 		if( ! confirm('Eliminar?')) evento.preventDefault();
+	 	})
+	 })
+</script>

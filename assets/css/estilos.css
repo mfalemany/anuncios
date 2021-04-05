@@ -301,14 +301,19 @@ body{
 }
 
 /* PANTALLA DE NUEVA PUBLICACION */
-.cerrar_sesion{
+.botonera{
+	justify-content: flex-end;
 	background-color: #CCCCCC;
-	margin: 0px 0px 20px 0px;
+	display:flex;
 	padding: 5px 25px 5px 0px;
 	font-size: 0.9em;
 	color:#444444;
 }
-.cerrar_sesion a{
+.botonera span{
+	box-sizing: border-box;
+	margin: 0 3px;
+}
+.botonera a{
 	text-decoration: none;
 	background-color: #1E8D58;
 	padding: 0px 10px 0px 10px;
@@ -316,11 +321,11 @@ body{
 	border-radius: 4px;
 	
 }
-.cerrar_sesion a:hover{
+.botonera a:hover{
 	color:#1E8D58;
 	background-color: #FFFFFF;
 }
-.cerrar_sesion b{
+.botonera b{
 	font-weight: bolder;
 }
 #aclaracion_titulo{
@@ -867,6 +872,34 @@ body{
 	font-size: 6em;
 	text-align: center;
 }
+
+#publicar_normativas{
+	
+	margin: 10px auto;
+	width:80%;
+}
+#publicar_normativas #publicar{
+	
+	display:flex;
+	width: 100%;
+}
+#publicar_normativas #publicar form{
+	width: 100%;
+}
+
+.linea_formulario{
+	display:flex;
+	margin:7px auto;
+	width:100%;
+}
+.linea_formulario label{
+	align-self: center;
+	display: inline-block;
+	margin-right: 10px;
+	text-align: right;
+	width: 20%;
+}
+
 
 /* =============== BOTON SCROLL UP ======================================= */
 #scrollUpButton{
