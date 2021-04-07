@@ -9,7 +9,23 @@ if(isset($_FILES['archivos']) && count($_FILES['archivos']) > 0){
 	}
 }
 
-
+function listar_nombres_archivos(){
+	$reglamentos = json_decode(file_get_contents('./assets/fake_bd/reglamentos_virtual.json'),TRUE);
+	foreach($reglamentos['carreras'] as $nombre_carrera => $carreras){
+		echo "<table class='tabla_materias'>";
+		echo "<caption>$nombre_carrera</caption>";
+		echo "<th>Materia</th><th>Nombre de Archivo</th>";
+		foreach($carreras['anios'] as $anio){
+			foreach($anio as $materias){
+				echo "<tr>";
+				echo "<td>".$materias['materia']."</td><td>".$materias['archivo']."</td>";
+				echo "</tr>";
+			}
+			
+		}
+		echo "</table>";
+	}
+}
 function procesar_archivos(){
 	if( ! is_dir($_POST['ruta'])) throw new Exception('No existe el directorio indicado');
 	for($i = 0; $i < count($_FILES['archivos']['name']); $i++){
@@ -48,12 +64,36 @@ function denegar(){
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Subir archivos</title>
 	<style>
+		label{
+			display: inline-block;
+			min-width: 160px;
+			text-align: right;
+		}
 		#notificacion{
 			background-color: yellow;
 			text-align: center;
 		}
 		.aclaracion_label{
 			font-size: 0.8em;
+		}
+		.tabla_materias{
+			border-collapse: collapse;
+			float: left;
+			margin: 10px;
+		}
+		.tabla_materias caption{
+			font-size: 1.1em;
+			font-weight: bold;
+		}
+		.tabla_materias tr:nth-child(odd){
+			background-color:#CCC;
+		}
+		.tabla_materias tr td, .tabla_materias th{
+			border: 1px solid black;
+		}
+		input[type="submit"]{
+			position: relative;
+			left: 160px;
 		}
 	</style>
 </head>
@@ -62,20 +102,21 @@ function denegar(){
 		<?php echo (isset($notificacion)) ? $notificacion : ''; ?>
 	</div>
 	<form action="uploader.php" method="POST" enctype="multipart/form-data">
-		Archivo: <input type="file" name="archivos[]" id="archivos" multiple required>
+		<label>Archivo</label> <input type="file" name="archivos[]" id="archivos" multiple required>
 		<br>
 		<br>
-		Ruta: <input type="text" name="ruta" id="ruta" size="80" required> 
+		<label>Ruta:</label> <input type="text" name="ruta" id="ruta" size="80" required> 
 		<span class="aclaracion_label">(El directorio de referencia es <?php echo __DIR__; ?>/)</span>
 		<br>
 		<br>
 		<input type="submit" value="Subir archivo(s)">
 	</form>
-	
-	
 	<ul>
 		<li><a href="" class="enlace_ruta" id="reglamento_examen">Es un reglamento de examen</a></li>
 	</ul>
+	<div>
+	<?php listar_nombres_archivos(); ?>
+	</div>
 	<script>
 		const rutas = {
 			"reglamento_examen":"./assets/pdfs/reglamentos_virtual"
