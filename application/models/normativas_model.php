@@ -32,7 +32,7 @@ class Normativas_model extends CI_Model {
 	}
 
 	function obtener_todas(){
-		$normativas = json_decode(file_get_contents($this->archivo_normativas),TRUE);
+		$normativas = array_reverse(json_decode(file_get_contents($this->archivo_normativas),TRUE));
 		$por_categoria = array();
 		foreach ($normativas as $normativa) {
 			$por_categoria[$normativa['categoria']][] = $normativa;
